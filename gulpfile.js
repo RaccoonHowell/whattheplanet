@@ -43,3 +43,14 @@ gulp.task('uglify-js', function () {
 gulp.task('watch-js', function () {
 	return gulp.watch(input_js, gulp.series('combine', 'uglify-js'));
 })
+
+let indent = require('gulp-indent');
+
+gulp.task('indent', () => {
+	return gulp.src('awfulindent.html', '!node_modules')
+    	.pipe(indent({
+        tabs:true,
+    	amount:1
+    }))
+	.pipe(gulp.dest('./whattheplanet'))
+}); 
