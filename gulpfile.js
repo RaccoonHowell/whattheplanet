@@ -8,9 +8,9 @@ let uglify = require('gulp-uglify-es').default;
 let input_js = ['js/jquery-3.3.1.slim.js', 'js/bootstrap.js', 'js/popper.js'];
 
 gulp.task('sass', function () {
-	return gulp.src('./scss/styles.scss')
+	return gulp.src('bootstrap/scss/*.scss')
 		.pipe(sass())
-		.pipe(rename('styles.css'))
+		.pipe(rename('style.css'))
 		.pipe(gulp.dest('./css/'));
 });
 
