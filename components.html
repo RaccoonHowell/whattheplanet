@@ -3,18 +3,32 @@
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<meta name="description" content="">
+    <title>What the Planet</title>
+    <!-- Insert the name of your planet into the description -HM -->
+    <meta name="description" content="All About the Planets">
+    
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="icon.png">
 	<!-- Place favicon.ico in the root directory -->
 
+	<!-- Adding in a reset as per Ruth's instructions -->
+	<link rel="stylesheet" href="css/reset.css">
+
 	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/all.scss">
+	
+    <meta name="theme-color" content="#fafafa">
 
-	<meta name="theme-color" content="#fafafa">
+    <!-- This came with the boilerplate, so we can add in Jquery if we need it as per Oli's example - HM -->
+    <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+	<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}"
+		crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
