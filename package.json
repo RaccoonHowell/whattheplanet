@@ -18,15 +18,13 @@
   },
   "homepage": "https://github.com/RaccoonHowell/whattheplanet#readme",
   "dependencies": {
-    "bootstrap": "file:bootstrap",
+    "bootstrap": "^4.4.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify-es": "^2.0.0"
-  },
-  "devDependencies": {
+    "gulp-uglify-es": "^2.0.0",
     "gulp-indent": "^1.0.1"
   }
 }
