@@ -7139,6 +7139,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
+<<<<<<< HEAD
+  background-color: lightsteelblue; }
+=======
   background-color: green; }
 
 .nonsense-class {
@@ -7146,3 +7149,4 @@ body {
 
 .another-nonsense-class {
   color: red; }
+>>>>>>> master
