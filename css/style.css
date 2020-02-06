@@ -7139,7 +7139,17 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background-color: red; }
+<<<<<<< HEAD
+  background-color: lightsteelblue; }
+=======
+  background-color: green; }
 
 .nonsense-class {
   color: blue; }
+<<<<<<< HEAD
+=======
+
+.another-nonsense-class {
+  color: red; }
+>>>>>>> master
+>>>>>>> d702f89894e429e21755e1659b51a485b22ccf43
