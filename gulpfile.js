@@ -15,10 +15,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('css/styles.css')
-	.pipe(cleanCSS({compatibility: 'ie8'}))
-	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./css/'));
+	return gulp.src('css/styles.css')
+		.pipe(cleanCSS({ compatibility: 'ie8' }))
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(gulp.dest('./css/'));
 });
 
 gulp.task('styles', gulp.series('sass', 'minify-css'));
@@ -29,15 +29,15 @@ gulp.task('watch', function () {
 
 gulp.task('combine', function () {
 	return gulp.src(input_js)
-	  .pipe(concat('all.js'))
-	  .pipe(gulp.dest('./js/'));
+		.pipe(concat('all.js'))
+		.pipe(gulp.dest('./js/'));
 });
 
 gulp.task('uglify-js', function () {
 	return gulp.src('js/all.js')
-	  .pipe(uglify())
-	  .pipe(rename({suffix: '.min'}))
-	  .pipe(gulp.dest('./js/'));
+		.pipe(uglify())
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(gulp.dest('./js/'));
 });
 
 gulp.task('watch-js', function () {
@@ -48,9 +48,9 @@ let indent = require('gulp-indent');
 
 gulp.task('indent', () => {
 	return gulp.src('awfulindent.html', '!node_modules')
-    	.pipe(indent({
-        tabs:true,
-    	amount:1
-    }))
-	.pipe(gulp.dest('./whattheplanet'))
+		.pipe(indent({
+			tabs: true,
+			amount: 1
+		}))
+		.pipe(gulp.dest('./whattheplanet'))
 }); 
