@@ -7142,3 +7142,8 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 100%;
   height: auto;
   padding-bottom: 6vh; }
+
+body {
+  max-width: 900px;
+  margin: 0px auto;
+  background-color: black; }
