@@ -5,7 +5,9 @@ let sass = require('gulp-sass');
 let concat = require('gulp-concat');
 let uglify = require('gulp-uglify-es').default;
 
-let input_js = ['js/jquery-3.3.1.slim.js', 'js/bootstrap.js', 'js/popper.js'];
+// let input_js = ['js/jquery-3.3.1.slim.js', 'js/bootstrap.js', 'js/popper.js'];
+
+// below is CSS 
 
 gulp.task('sass', function () {
 	return gulp.src('./scss/all.scss')
@@ -15,7 +17,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('minify-css', () => {
-	return gulp.src('css/styles.css')
+	return gulp.src('css/style.css')
 		.pipe(cleanCSS({ compatibility: 'ie8' }))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('./css/'));
@@ -27,22 +29,26 @@ gulp.task('watch', function () {
 	return gulp.watch('./scss/**/*.scss', gulp.series('styles'));
 });
 
-gulp.task('combine', function () {
-	return gulp.src(input_js)
-		.pipe(concat('all.js'))
-		.pipe(gulp.dest('./js/'));
-});
+// below is Javascript
 
-gulp.task('uglify-js', function () {
-	return gulp.src('js/all.js')
-		.pipe(uglify())
-		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest('./js/'));
-});
+// gulp.task('combine', function () {
+// 	return gulp.src(input_js)
+// 		.pipe(concat('all.js'))
+// 		.pipe(gulp.dest('./js/'));
+// });
 
-gulp.task('watch-js', function () {
-	return gulp.watch(input_js, gulp.series('combine', 'uglify-js'));
-})
+// gulp.task('uglify-js', function () {
+// 	return gulp.src('js/all.js')
+// 		.pipe(uglify())
+// 		.pipe(rename({ suffix: '.min' }))
+// 		.pipe(gulp.dest('./js/'));
+// });
+
+// gulp.task('watch-js', function () {
+// 	return gulp.watch(input_js, gulp.series('combine', 'uglify-js'));
+// })
+
+//below is indent 
 
 let indent = require('gulp-indent');
 
