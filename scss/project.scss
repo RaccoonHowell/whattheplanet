@@ -4,17 +4,16 @@ body {
 
 footer .container {
     // margin: 5rem 1rem 0.5rem 0.5rem;
-    border: purple 1px solid;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 4rem 2rem 4rem;
     display: block;
     background-image: url(../img/blue.jpg);
+    width: 100%;
 }
 
 footer p {
     margin: 16px 0px;
     text-align: left;
-    color: rgb(173, 97, 173);
-    padding-left: 3rem;
+    color: silver;;
     font-weight: 500;
 }
 
@@ -27,14 +26,13 @@ footer p {
 
 footer .icons {
     text-align: right;
-    padding-right: 3rem;
 }
 
 
 footer .icon {
     display: inline-block;
     width: 25px; height: 25px;
-    background-color: rgb(173, 97, 173);
+    background-color: silver;
     margin: 16px 6px;
     border-radius: 50%;
     padding: 5px;
@@ -47,5 +45,5 @@ footer .icon img{
 }
 
 footer .icon:hover {
-    background-color: rgb(209, 118, 209);
+    background-color: turquoise;
 }
