@@ -7140,3 +7140,38 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   background-color: lightsteelblue; }
+
+footer .container {
+  border: purple 1px solid;
+  padding: 2rem 1rem 2rem 1rem;
+  display: block;
+  background-image: url(../img/blue.jpg); }
+
+footer p {
+  margin: 16px 0px;
+  text-align: left;
+  color: #ad61ad;
+  padding-left: 3rem;
+  font-weight: 500; }
+
+footer .icons {
+  text-align: right;
+  padding-right: 3rem; }
+
+footer .icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #ad61ad;
+  margin: 16px 6px;
+  border-radius: 50%;
+  padding: 5px; }
+
+footer .icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+footer .icon:hover {
+  background-color: #d176d1; }
