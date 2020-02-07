@@ -7143,6 +7143,11 @@ a.text-dark:hover, a.text-dark:focus {
   height: auto;
   padding-bottom: 6vh; }
 
+ul {
+  margin-left: 20px;
+  list-style: square;
+  font-size: 4vh; }
+
 body {
   max-width: 900px;
   margin: 0px auto;
