@@ -7147,3 +7147,9 @@ body {
   max-width: 900px;
   margin: 0px auto;
   background-color: black; }
+
+#homepagetitle {
+  color: white;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  text-align: center; }
