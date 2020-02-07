@@ -17,7 +17,6 @@ On command line type 'npm install' in the project directory and this will instal
 4. gulp-rename
 5. gulp-sass
 6. gulp-uglify-es
-7. browser-sync
 
 ### Work in progress
 
