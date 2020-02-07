@@ -17,8 +17,17 @@ On command line type 'npm install' in the project directory and this will instal
 4. gulp-rename
 5. gulp-sass
 6. gulp-uglify-es
-7. browser-sync
 
-### Tasks
+### Work in progress
 
 #### Josh
+Working on the Venus html page and styling
+
+#### Harry
+Working on the template and nav-bar and on JS
+
+#### Nate
+Working on the homepage html and styling
+
+#### Rachel
+Working on the readme file 
