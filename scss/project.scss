@@ -3,3 +3,49 @@
     height: auto;
     padding-bottom: 6vh;
 }
+
+footer .container {
+    // margin: 5rem 1rem 0.5rem 0.5rem;
+    padding: 2rem 4rem 2rem 4rem;
+    display: block;
+    background-image: url(../img/blue.jpg);
+    width: 100%;
+}
+
+footer p {
+    margin: 16px 0px;
+    text-align: left;
+    color: silver;;
+    font-weight: 500;
+}
+
+// .icons {
+//     width: 1.5vw;
+//     height: 1.5vw;
+//     display: inline-block; 
+//     border-radius: 50%; 
+// }
+
+footer .icons {
+    text-align: right;
+}
+
+
+footer .icon {
+    display: inline-block;
+    width: 25px; height: 25px;
+    background-color: silver;
+    margin: 16px 6px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+footer .icon img{
+    display: block;
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+
+footer .icon:hover {
+    background-color: turquoise;
+}
