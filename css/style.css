@@ -7200,3 +7200,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto; }
+
+#mainimage {
+  max-width: 100%;
+  margin-bottom: 2vw; }
