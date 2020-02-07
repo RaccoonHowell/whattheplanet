@@ -7195,3 +7195,8 @@ body {
   margin-top: 2vw;
   margin-bottom: 2vw;
   text-align: center; }
+
+.icon {
+  display: block;
+  max-width: 100%;
+  height: auto; }
