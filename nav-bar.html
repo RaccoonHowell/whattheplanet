@@ -20,6 +20,9 @@
 	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 	<link rel="stylesheet" href="css/style.min.css">
 
+	<!-- Adding in a dedicated css file for the nav -->
+	<link rel="stylesheet" href="css/navbar.css">
+
 	<meta name="theme-color" content="#fafafa">
 
 	<!-- This is where we can load a local group of JS files, remote right now - HM -->
@@ -40,8 +43,9 @@
 <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="#">What the Planet!</a>
+
+<nav class="navabar sticky-top navbar-expand-lg navbar-dark bg-dark">
+	<!-- <a href="#" class="navbar-brand">What the planet!</a> -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
@@ -49,13 +53,11 @@
 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		<ul class="navbar-nav">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="#">Home
+					<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="about.html">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="contact.html">Contact</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -73,19 +75,23 @@
 					<a class="dropdown-item" href="neptune.html">Neptune</a>
 				</div>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			</li>
 		</ul>
 	</div>
 </nav>
+<!-- End of Nav -->
 
 <body>
 
-	<h1>Hello</h1>
-	<h2>Welcome to my website</h2>
-
-	<!-- Add your site or application content here -->
-	<p>Hello world! This is HTML5 Boilerplate.</p>
-
-	<!-- Template picture code -- Use this for your planet -->
+	<div class="jumbotron">
+		<h1 class="display-4">Hello, worlds!</h1>
+		<p class="lead">The Earth: Mostly Harmless</p>
+		<hr class="my-4">
+		<p>Key Stats</p>
+		<a class="btn btn-primary btn-lg" href="#" role="button">I want to go to there</a>
+	</div>
 	<section>
 		<picture>
 			<source srcset="img/03_earth.webp" type="image/webp">
@@ -105,7 +111,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
-					<p>&copy whattheplanet <script>document.write(new Date().getFullYear())</script></p>
+					<p>&copy whattheplanet
+						<script>document.write(new Date().getFullYear())</script>
+					</p>
 				</div>
 				<div class="col-sm"></div>
 				<div class="col-sm icons">
